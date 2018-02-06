@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>    body {
+      font-family: sans-serif;
+      font-size: 11pt;
+    }
+    .highlight {
+      fill: #f00;
+      stroke: #000;
+    }
+
+    path.state-boundary {
+      stroke: #000;
+      stroke-width: .5px;
+    }
+
+    rect {
+      fill: #ddd;
+      stroke: #000;
+      stroke-width: .5px;
+    }
+
+    .bar rect.highlight {
+      fill: #f00;
+      stroke: #000;
+      stroke-width: .5px;
+    }
+
+    .bar text {
+      font-size: 9pt;
+    }
+    
+    #brushed svg {
+      padding: 10px;
+    }
+
+    .x.axis text {
+      transform: translate(-12px,10px) rotate(-90deg);
+      text-anchor: end;
+    }
+      .line {
+          fill: none;
+          stroke: steelblue;
+          stroke-width: 2px;
+      }
+    
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#bubble" onclick="mystack()">bubble</button>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#bubble" onclick="mybar()">stack</button>
+        <div id="bubble"></div>
+        <div id="stack"></div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v4.js"></script>
+   
+    <script type="text/javascript" src="project.js"></script>
+</body>
+</html>
