@@ -1,0 +1,32 @@
+#slider {
+  width:25%;
+  float: right;
+  margin-right: 600px;
+}
+#drop-down {
+  
+  float: left;
+}
+#slider label {
+  position: absolute;
+  width: 20px;
+  margin-top: 20px;
+  margin-left: -10px;
+  text-align: center;
+}
+#map
+{
+   width:50%;
+  float: left;
+ 
+}
+#hist
+{
+   width:50%;
+  float: right;
+  margin-top: 150px;
+ 
+}
+#geo:hover {
+  fill: red;
+}
